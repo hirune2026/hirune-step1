@@ -41,7 +41,7 @@ textarea::placeholder{color:var(--text-light);}
 .num-input{width:100%;padding:10px 14px;border:1px solid #B8DEC5;border-radius:8px;background:white;font-family:"Zen Maru Gothic",sans-serif;font-size:16px;color:var(--text-main);outline:none;transition:border-color 0.2s;}
 .num-input:focus{border-color:var(--green-sage);}
 .num-input::placeholder{color:var(--text-light);}
-.btn-row{display:flex;gap:8px;margin-top:12px;}.btn-row .dl-btn{flex:1;padding:10px 8px;background:white;color:var(--green-sage);border:2px solid var(--green-sage);border-radius:20px;font-family:"Zen Maru Gothic",sans-serif;font-size:15px;font-weight:700;cursor:pointer;transition:background 0.2s,transform 0.1s;}.btn-row .dl-btn:hover{background:var(--green-light);transform:translateY(-1px);}
+.btn-row{display:flex;gap:8px;margin-top:12px;}.btn-row .dl-btn{flex:1;padding:10px 8px;background:white;color:#C0614A;border:2px solid #C0614A;border-radius:20px;font-family:"Zen Maru Gothic",sans-serif;font-size:15px;font-weight:700;cursor:pointer;transition:background 0.2s,transform 0.1s;}.btn-row .dl-btn:hover{background:#FDF0EC;transform:translateY(-1px);}
 .save-btn{padding:10px 24px;background:var(--brown-mid);color:white;border:none;border-radius:20px;font-family:"Zen Maru Gothic",sans-serif;font-size:18px;font-weight:700;cursor:pointer;transition:background 0.2s,transform 0.1s;}
 .save-btn:hover{background:var(--brown-deep);transform:translateY(-1px);}
 .saved-tag{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:var(--green-sage);color:white;font-size:14px;padding:8px 20px;border-radius:20px;opacity:0;pointer-events:none;transition:opacity 0.4s;z-index:999;white-space:nowrap;box-shadow:0 4px 12px rgba(0,0,0,0.15);}
@@ -65,15 +65,14 @@ textarea::placeholder{color:var(--text-light);}
 <div id="global-saved-tag" class="saved-tag">✓ 保存しました</div>
 <div class="app-wrap">
   <div class="header">
-    <div class="logo">HIRUNE</div>
-    <h1>棚卸しワーク STEP 1<br>あなたの材料を揃えよう</h1>
+    <div class="logo">HIRUNE RECIPE</div>
+    <h1>STEP1　棚卸しワーク<br>あなたの材料を揃えよう</h1>
     <p>7つの質問に答えるだけ。<br>気づいたときに、気づいた質問から書いていい。<br>順番は関係ない。</p>
   </div>
   <div class="save-notice">
     <div class="save-notice-title">💾 回答の保存について</div>
-    回答は入力欄から離れた瞬間、またはブラウザを閉じる直前に自動保存されます。同じブラウザで開き直せば続きから再開できます。<br>
-    大切な回答は、途中でも「💾 ファイル保存」ボタンでテキストファイルとして手元に残しておくのがおすすめです。
-    <div class="save-notice-warn">⚠️ キャッシュクリアやシークレットウィンドウ、別のブラウザからは回答が引き継がれません。大切な回答はファイルに保存しておくことをおすすめします。</div>
+    回答はブラウザに自動保存され、同じブラウザで開き直せば続きから再開できますが、途中でも「💾 ファイル保存」ボタンでテキストファイルとして手元に残しておくのがおすすめです。
+    <div class="save-notice-warn">⚠️ キャッシュクリアしたり、シークレットウィンドウ、別のブラウザからは回答が引き継がれません。ファイル保存で大切な回答を守りましょう♡</div>
   </div>
   <div class="prog-area">
     <div class="prog-row"><span class="prog-label">記入済み</span><span class="prog-count" id="prog-count">0 / 7</span></div>
